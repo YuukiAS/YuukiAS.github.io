@@ -6,7 +6,8 @@
     "build": "yarn compile && yarn next build",
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
-    "dev": "yarn compile && yarn next dev",
+    "dev": "yarn compile && npm run open-browser && yarn next dev",
+    "open-browser": "open http://localhost:3000",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap"
