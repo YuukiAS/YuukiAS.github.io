@@ -21,7 +21,7 @@ import {
   ContactSection,
   ContactType,
   Hero,
-  HomepageMeta,
+  // HomepageMeta,
   PortfolioItem,
   SkillGroup,
   Social,
@@ -32,16 +32,16 @@ import {
 /**
  * Page meta data
  */
-export const homePageMeta: HomepageMeta = {
-  title: 'Tim Baker',
-  description: ``,
-  ogImageUrl: ``,
-  twitterCardType: 'summary_large',
-  twitterSite: `@timbakerx`,
-  twitterCreator: `@timbakerx`,
-  twitterDomain: `reactresume.com`,
-  twitterUrl: `https://reactresume.com`,
-};
+// export const homePageMeta: HomepageMeta = {
+//   title: 'Tim Baker',
+//   description: ``,
+//   ogImageUrl: ``,
+//   twitterCardType: 'summary_large',
+//   twitterSite: `@timbakerx`,
+//   twitterCreator: `@timbakerx`,
+//   twitterDomain: `reactresume.com`,
+//   twitterUrl: `https://reactresume.com`,
+// };
 
 /**
  * Section definition
@@ -79,7 +79,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf', // todo where is assets?
+      href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -143,6 +143,10 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'SAS',
+        level: 6,
+      },
+      {
         name: 'JavaScript',
         level: 6,
       },
@@ -151,8 +155,8 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'SAS',
-        level: 6,
+        name: 'Verilog',
+        level: 5,
       },
       {
         name: 'SQL',
@@ -183,39 +187,46 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2023 - Present',
+    location: 'University of North Carolina, Chapel Hill',
+    title: 'Master of Science in Biostatistics',
+    content: <p>Featured Courses: Intro to Statistical Computing and Research Data Management, Survival Analysis (Doctorate level)</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2019 - August 2023',
+    location: 'Shanghai Jiao Tong University',
+    title: 'Bachelor of Science in Electrical and Computer Engineering',
+    content: <p>Featured Courses: Numerical Analysis, Computer Architecture</p>,
+  },
+  {
+    date: 'September 2021 - April 2023',
+    location: 'University of Michigan',
+    title: 'Bachelor of Science in Engineering in Data Science',
+    content: <p>Featured Courses: Data Structure and Algorithms, Web System, Intro to Machine Learning, Database Management, Intro to Real Analysis, Applied Bayesian Inference, Non-parametric Statistics</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
+  
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Summer, 2023',
+    location: 'Shanghai Jiao Tong University',
+    title: 'Teaching assistant for ECE4710J: Numerical Analysis',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        {/* Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know. */}
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Winter, 2022',
+    location: 'University of Michigan',
+    title: 'Grader for EECS370: Computer Organization',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        {/* Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know. */}
       </p>
     ),
   },
@@ -277,5 +288,6 @@ export const socialLinks: Social[] = [
   {label: 'School', Icon: AcademicCapIcon, href: 'https://sph.unc.edu/bios/biostatistics/'},
 ];
 
-// todo Add things like Google analytics
-// todo Add pages for posting, maybe linked with notion?
+// todo: Add things like Google analytics
+// todo: Add a section to record travel destinations
+// todo: Add more in project section
