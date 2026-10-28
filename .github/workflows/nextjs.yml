@@ -35,8 +35,10 @@ jobs:
           mkdir -p _site
           cp -R pages-snapshot/. _site/
           cp -R public/CAT-TRACE _site/CAT-TRACE
+          cp -R public/numerical-atlas _site/numerical-atlas
           test -f _site/index.html
           test -f _site/CAT-TRACE/index.html
+          test -f _site/numerical-atlas/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
